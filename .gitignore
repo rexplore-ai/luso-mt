@@ -6,3 +6,4 @@ outputs/
 *.parquet
 wandb/
 .env
+multirun/

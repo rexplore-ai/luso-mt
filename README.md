@@ -36,6 +36,8 @@ training/finetune_mt_teacher.py  fine-tune MADLAD-400 3B into the teacher; trans
 training/train_luso_mt.py        train tiny/small students from scratch (with or without distillation)
 evaluation/eval_mt_candidates.py score existing open models on the test sets
 evaluation/benchmark_mt.py       file size, CPU speed and example translations
+evaluation/eval_int8.py          translation quality after int8 quantisation
+launch.py, configs/              Hydra configs and launcher for training runs and seed sweeps
 evaluation/mt_report.py          score, length, language-confusion and win matrices
 evaluation/build_benchmark.py    assemble the public benchmark of system outputs
 evaluation/make_cards.py         model cards from eval.json and benchmark.json
@@ -46,11 +48,17 @@ paper/figures/                   architecture and pipeline diagrams (SVG)
 ```
 
 Every script declares its dependencies inline ([PEP 723](https://peps.python.org/pep-0723/)) and runs with
-`uv run script.py`. The training scripts were run on Hugging Face Jobs, for example:
+`uv run script.py`. Training runs on Hugging Face Jobs and is configured with Hydra/OmegaConf
+(`configs/config.yaml`, `configs/experiment/*.yaml`):
 
 ```
-hf jobs uv run --flavor h200 --secrets HF_TOKEN training/train_luso_mt.py --size small --public-only --kd <dataset-with-kd.parquet>
+uv run launch.py experiment=tiny_kd seed=14                       # one run
+uv run launch.py -m experiment=tiny_kd,tiny_base,tiny_rep2 seed=13,14,15   # seed sweep
+uv run launch.py -m experiment=small_kd seed=13,14,15 hf.flavor=h200 dry_run=true
 ```
+
+`tiny_rep2` is the matched-exposure control: the original pairs are repeated twice so the run sees as many rows per
+epoch as a distilled run, with the same epoch limit.
 
 ## Data
 

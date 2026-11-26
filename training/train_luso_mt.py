@@ -189,6 +189,8 @@ def main():
     a.add_argument("--batch", type=int, default=256)
     a.add_argument("--eval-steps", type=int, default=2000)
     a.add_argument("--seed", type=int, default=13)
+    a.add_argument("--repeat-original", type=int, default=1,
+                   help="repeat the original pairs N times (control: same rows per epoch as a distilled run)")
     a.add_argument("--max-train", type=int, default=0, help="debug: limit training rows")
     a.add_argument("--smoke", action="store_true", help="10-minute end-to-end check on a small GPU")
     args = a.parse_args()
@@ -206,6 +208,8 @@ def main():
         dev, test = dev.groupby("direction").head(16), test.groupby("direction").head(16)
     if args.public_only:
         train = train[train.release == "public"]
+    if args.repeat_original > 1:
+        train = pd.concat([train] * args.repeat_original, ignore_index=True)
     if args.kd:
         kd = pd.read_parquet(hf_hub_download(args.kd, "kd.parquet", repo_type="dataset"))
         kd = kd[kd.tgt_kd.fillna("") != ""]
@@ -245,7 +249,8 @@ def main():
         save_total_limit=3, load_best_model_at_end=True, metric_for_best_model="chrf", greater_is_better=True,
         predict_with_generate=True, generation_num_beams=1, generation_max_length=192, logging_steps=200,
         dataloader_num_workers=8, report_to=wandb_init(f"luso-mt-{args.size}", vars(args) | cfg | {"params_M": round(n_params / 1e6, 1)}),
-        run_name=f"luso-mt-{args.size}" + ("-kd" if args.kd else "") + ("-public" if args.public_only else ""), seed=args.seed)
+        run_name=f"luso-mt-{args.size}" + ("-kd" if args.kd else "") + ("-public" if args.public_only else "")
+        + (f"-rep{args.repeat_original}" if args.repeat_original > 1 else "") + f"-s{args.seed}", seed=args.seed)
 
     def compute(pred):
         preds, labels = pred
@@ -274,6 +279,7 @@ def main():
     preds = []
     report = {"size": args.size, "params_M": round(n_params / 1e6, 1), "config": cfg,
               "train_rows": len(train), "public_only": args.public_only, "kd": bool(args.kd),
+              "seed": args.seed, "repeat_original": args.repeat_original, "epochs_max": args.epochs,
               "test": score_split(model, tok, test, preds=preds, name=f"luso-mt-{args.size}"),
               "dev": score_split(model, tok, dev)}
     with open(os.path.join(out_dir, "predictions.jsonl"), "w", encoding="utf-8") as f:
