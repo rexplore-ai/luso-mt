@@ -1,0 +1,1203 @@
+{
+ "systems": [
+  "luso-mt-small",
+  "luso-mt-tiny",
+  "luso-mt-3b",
+  "luso-mt-teacher",
+  "nllb-200-distilled-600M",
+  "madlad400-3b-mt",
+  "OPUS-MT"
+ ],
+ "significance": {
+  "luso-mt-small": {
+   "en->ny": {
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 47.6,
+      "ci95": 1.2,
+      "p": null
+     },
+     "BLEU": {
+      "score": 20.1,
+      "ci95": 1.7
+     }
+    },
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 46.3,
+      "ci95": 1.2,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 19.1,
+      "ci95": 1.5
+     }
+    },
+    "luso-mt-3b": {
+     "chrF++": {
+      "score": 51.7,
+      "ci95": 1.3,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 23.1,
+      "ci95": 1.7
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 49.9,
+      "ci95": 1.3,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 21.9,
+      "ci95": 1.7
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 50.0,
+      "ci95": 1.4,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 20.1,
+      "ci95": 1.7
+     }
+    },
+    "madlad400-3b-mt": {
+     "chrF++": {
+      "score": 37.8,
+      "ci95": 1.5,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 11.5,
+      "ci95": 1.5
+     }
+    },
+    "OPUS-MT": {
+     "chrF++": {
+      "score": 41.0,
+      "ci95": 1.0,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 12.0,
+      "ci95": 1.1
+     }
+    }
+   },
+   "ny->en": {
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 46.9,
+      "ci95": 1.2,
+      "p": null
+     },
+     "BLEU": {
+      "score": 23.6,
+      "ci95": 1.6
+     }
+    },
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 45.5,
+      "ci95": 1.2,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 22.0,
+      "ci95": 1.5
+     }
+    },
+    "luso-mt-3b": {
+     "chrF++": {
+      "score": 54.9,
+      "ci95": 1.3,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 32.9,
+      "ci95": 1.7
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 53.8,
+      "ci95": 1.2,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 31.4,
+      "ci95": 1.8
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 55.2,
+      "ci95": 1.3,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 34.2,
+      "ci95": 2.0
+     }
+    },
+    "madlad400-3b-mt": {
+     "chrF++": {
+      "score": 51.3,
+      "ci95": 1.2,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 30.7,
+      "ci95": 1.8
+     }
+    },
+    "OPUS-MT": {
+     "chrF++": {
+      "score": 42.7,
+      "ci95": 1.1,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 18.6,
+      "ci95": 1.4
+     }
+    }
+   },
+   "en->tum": {
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 35.8,
+      "ci95": 1.0,
+      "p": null
+     },
+     "BLEU": {
+      "score": 8.2,
+      "ci95": 1.0
+     }
+    },
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 34.9,
+      "ci95": 1.0,
+      "p": 0.007
+     },
+     "BLEU": {
+      "score": 8.1,
+      "ci95": 1.0
+     }
+    },
+    "luso-mt-3b": {
+     "chrF++": {
+      "score": 40.7,
+      "ci95": 1.3,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 12.6,
+      "ci95": 1.4
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 37.5,
+      "ci95": 1.3,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 9.7,
+      "ci95": 1.2
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 38.2,
+      "ci95": 1.3,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 13.0,
+      "ci95": 1.5
+     }
+    }
+   },
+   "tum->en": {
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 30.0,
+      "ci95": 0.9,
+      "p": null
+     },
+     "BLEU": {
+      "score": 8.8,
+      "ci95": 1.1
+     }
+    },
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 29.1,
+      "ci95": 0.9,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 7.9,
+      "ci95": 1.0
+     }
+    },
+    "luso-mt-3b": {
+     "chrF++": {
+      "score": 36.3,
+      "ci95": 1.1,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 14.2,
+      "ci95": 1.3
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 34.7,
+      "ci95": 1.1,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 12.7,
+      "ci95": 1.4
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 32.7,
+      "ci95": 1.1,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 12.0,
+      "ci95": 1.3
+     }
+    },
+    "madlad400-3b-mt": {
+     "chrF++": {
+      "score": 26.8,
+      "ci95": 1.1,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 5.9,
+      "ci95": 1.1
+     }
+    },
+    "OPUS-MT": {
+     "chrF++": {
+      "score": 24.1,
+      "ci95": 0.8,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 5.4,
+      "ci95": 0.8
+     }
+    }
+   }
+  },
+  "luso-mt-3b": {
+   "en->ny": {
+    "luso-mt-3b": {
+     "chrF++": {
+      "score": 51.7,
+      "ci95": 1.3,
+      "p": null
+     },
+     "BLEU": {
+      "score": 23.1,
+      "ci95": 1.7
+     }
+    },
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 47.6,
+      "ci95": 1.2,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 20.1,
+      "ci95": 1.7
+     }
+    },
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 46.3,
+      "ci95": 1.2,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 19.1,
+      "ci95": 1.5
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 49.9,
+      "ci95": 1.3,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 21.9,
+      "ci95": 1.7
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 50.0,
+      "ci95": 1.4,
+      "p": 0.002
+     },
+     "BLEU": {
+      "score": 20.1,
+      "ci95": 1.7
+     }
+    },
+    "madlad400-3b-mt": {
+     "chrF++": {
+      "score": 37.8,
+      "ci95": 1.5,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 11.5,
+      "ci95": 1.5
+     }
+    },
+    "OPUS-MT": {
+     "chrF++": {
+      "score": 41.0,
+      "ci95": 1.0,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 12.0,
+      "ci95": 1.1
+     }
+    }
+   },
+   "ny->en": {
+    "luso-mt-3b": {
+     "chrF++": {
+      "score": 54.9,
+      "ci95": 1.3,
+      "p": null
+     },
+     "BLEU": {
+      "score": 32.9,
+      "ci95": 1.7
+     }
+    },
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 46.9,
+      "ci95": 1.2,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 23.6,
+      "ci95": 1.6
+     }
+    },
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 45.5,
+      "ci95": 1.2,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 22.0,
+      "ci95": 1.5
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 53.8,
+      "ci95": 1.2,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 31.4,
+      "ci95": 1.8
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 55.2,
+      "ci95": 1.3,
+      "p": 0.1878
+     },
+     "BLEU": {
+      "score": 34.2,
+      "ci95": 2.0
+     }
+    },
+    "madlad400-3b-mt": {
+     "chrF++": {
+      "score": 51.3,
+      "ci95": 1.2,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 30.7,
+      "ci95": 1.8
+     }
+    },
+    "OPUS-MT": {
+     "chrF++": {
+      "score": 42.7,
+      "ci95": 1.1,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 18.6,
+      "ci95": 1.4
+     }
+    }
+   },
+   "en->tum": {
+    "luso-mt-3b": {
+     "chrF++": {
+      "score": 40.7,
+      "ci95": 1.3,
+      "p": null
+     },
+     "BLEU": {
+      "score": 12.6,
+      "ci95": 1.4
+     }
+    },
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 35.8,
+      "ci95": 1.0,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 8.2,
+      "ci95": 1.0
+     }
+    },
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 34.9,
+      "ci95": 1.0,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 8.1,
+      "ci95": 1.0
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 37.5,
+      "ci95": 1.3,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 9.7,
+      "ci95": 1.2
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 38.2,
+      "ci95": 1.3,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 13.0,
+      "ci95": 1.5
+     }
+    }
+   },
+   "tum->en": {
+    "luso-mt-3b": {
+     "chrF++": {
+      "score": 36.3,
+      "ci95": 1.1,
+      "p": null
+     },
+     "BLEU": {
+      "score": 14.2,
+      "ci95": 1.3
+     }
+    },
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 30.0,
+      "ci95": 0.9,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 8.8,
+      "ci95": 1.1
+     }
+    },
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 29.1,
+      "ci95": 0.9,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 7.9,
+      "ci95": 1.0
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 34.7,
+      "ci95": 1.1,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 12.7,
+      "ci95": 1.4
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 32.7,
+      "ci95": 1.1,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 12.0,
+      "ci95": 1.3
+     }
+    },
+    "madlad400-3b-mt": {
+     "chrF++": {
+      "score": 26.8,
+      "ci95": 1.1,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 5.9,
+      "ci95": 1.1
+     }
+    },
+    "OPUS-MT": {
+     "chrF++": {
+      "score": 24.1,
+      "ci95": 0.8,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 5.4,
+      "ci95": 0.8
+     }
+    }
+   }
+  },
+  "luso-mt-tiny": {
+   "en->ny": {
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 46.3,
+      "ci95": 1.2,
+      "p": null
+     },
+     "BLEU": {
+      "score": 19.1,
+      "ci95": 1.5
+     }
+    },
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 47.6,
+      "ci95": 1.2,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 20.1,
+      "ci95": 1.7
+     }
+    },
+    "luso-mt-3b": {
+     "chrF++": {
+      "score": 51.7,
+      "ci95": 1.3,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 23.1,
+      "ci95": 1.7
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 49.9,
+      "ci95": 1.3,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 21.9,
+      "ci95": 1.7
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 50.0,
+      "ci95": 1.4,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 20.1,
+      "ci95": 1.7
+     }
+    },
+    "madlad400-3b-mt": {
+     "chrF++": {
+      "score": 37.8,
+      "ci95": 1.5,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 11.5,
+      "ci95": 1.5
+     }
+    },
+    "OPUS-MT": {
+     "chrF++": {
+      "score": 41.0,
+      "ci95": 1.0,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 12.0,
+      "ci95": 1.1
+     }
+    }
+   },
+   "ny->en": {
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 45.5,
+      "ci95": 1.2,
+      "p": null
+     },
+     "BLEU": {
+      "score": 22.0,
+      "ci95": 1.5
+     }
+    },
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 46.9,
+      "ci95": 1.2,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 23.6,
+      "ci95": 1.6
+     }
+    },
+    "luso-mt-3b": {
+     "chrF++": {
+      "score": 54.9,
+      "ci95": 1.3,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 32.9,
+      "ci95": 1.7
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 53.8,
+      "ci95": 1.2,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 31.4,
+      "ci95": 1.8
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 55.2,
+      "ci95": 1.3,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 34.2,
+      "ci95": 2.0
+     }
+    },
+    "madlad400-3b-mt": {
+     "chrF++": {
+      "score": 51.3,
+      "ci95": 1.2,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 30.7,
+      "ci95": 1.8
+     }
+    },
+    "OPUS-MT": {
+     "chrF++": {
+      "score": 42.7,
+      "ci95": 1.1,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 18.6,
+      "ci95": 1.4
+     }
+    }
+   },
+   "en->tum": {
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 34.9,
+      "ci95": 1.0,
+      "p": null
+     },
+     "BLEU": {
+      "score": 8.1,
+      "ci95": 1.0
+     }
+    },
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 35.8,
+      "ci95": 1.0,
+      "p": 0.007
+     },
+     "BLEU": {
+      "score": 8.2,
+      "ci95": 1.0
+     }
+    },
+    "luso-mt-3b": {
+     "chrF++": {
+      "score": 40.7,
+      "ci95": 1.3,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 12.6,
+      "ci95": 1.4
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 37.5,
+      "ci95": 1.3,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 9.7,
+      "ci95": 1.2
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 38.2,
+      "ci95": 1.3,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 13.0,
+      "ci95": 1.5
+     }
+    }
+   },
+   "tum->en": {
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 29.1,
+      "ci95": 0.9,
+      "p": null
+     },
+     "BLEU": {
+      "score": 7.9,
+      "ci95": 1.0
+     }
+    },
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 30.0,
+      "ci95": 0.9,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 8.8,
+      "ci95": 1.1
+     }
+    },
+    "luso-mt-3b": {
+     "chrF++": {
+      "score": 36.3,
+      "ci95": 1.1,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 14.2,
+      "ci95": 1.3
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 34.7,
+      "ci95": 1.1,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 12.7,
+      "ci95": 1.4
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 32.7,
+      "ci95": 1.1,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 12.0,
+      "ci95": 1.3
+     }
+    },
+    "madlad400-3b-mt": {
+     "chrF++": {
+      "score": 26.8,
+      "ci95": 1.1,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 5.9,
+      "ci95": 1.1
+     }
+    },
+    "OPUS-MT": {
+     "chrF++": {
+      "score": 24.1,
+      "ci95": 0.8,
+      "p": 0.001
+     },
+     "BLEU": {
+      "score": 5.4,
+      "ci95": 0.8
+     }
+    }
+   }
+  }
+ },
+ "wins": {
+  "luso-mt-small": {
+   "luso-mt-tiny": 56.1,
+   "luso-mt-3b": 27.7,
+   "luso-mt-teacher": 32.5,
+   "nllb-200-distilled-600M": 36.4,
+   "madlad400-3b-mt": 57.7,
+   "OPUS-MT": 71.9
+  },
+  "luso-mt-tiny": {
+   "luso-mt-small": 41.5,
+   "luso-mt-3b": 22.7,
+   "luso-mt-teacher": 26.7,
+   "nllb-200-distilled-600M": 32.4,
+   "madlad400-3b-mt": 52.2,
+   "OPUS-MT": 68.7
+  },
+  "luso-mt-3b": {
+   "luso-mt-small": 71.5,
+   "luso-mt-tiny": 76.8,
+   "luso-mt-teacher": 56.5,
+   "nllb-200-distilled-600M": 56.5,
+   "madlad400-3b-mt": 75.9,
+   "OPUS-MT": 84.1
+  },
+  "luso-mt-teacher": {
+   "luso-mt-small": 66.5,
+   "luso-mt-tiny": 72.5,
+   "luso-mt-3b": 35.4,
+   "nllb-200-distilled-600M": 48.7,
+   "madlad400-3b-mt": 72.1,
+   "OPUS-MT": 81.1
+  },
+  "nllb-200-distilled-600M": {
+   "luso-mt-small": 63.0,
+   "luso-mt-tiny": 67.4,
+   "luso-mt-3b": 42.0,
+   "luso-mt-teacher": 50.3,
+   "madlad400-3b-mt": 71.7,
+   "OPUS-MT": 79.3
+  },
+  "madlad400-3b-mt": {
+   "luso-mt-small": 41.8,
+   "luso-mt-tiny": 47.3,
+   "luso-mt-3b": 22.9,
+   "luso-mt-teacher": 26.7,
+   "nllb-200-distilled-600M": 27.8,
+   "OPUS-MT": 61.6
+  },
+  "OPUS-MT": {
+   "luso-mt-small": 27.8,
+   "luso-mt-tiny": 31.1,
+   "luso-mt-3b": 15.5,
+   "luso-mt-teacher": 18.5,
+   "nllb-200-distilled-600M": 20.2,
+   "madlad400-3b-mt": 38.1
+  }
+ },
+ "slices": {
+  "luso-mt-small": {
+   "en->ny|short": 39.2,
+   "en->ny|medium": 46.9,
+   "en->ny|long": 49.5,
+   "ny->en|short": 42.1,
+   "ny->en|medium": 47.0,
+   "ny->en|long": 47.7,
+   "en->tum|short": 28.2,
+   "en->tum|medium": 36.7,
+   "en->tum|long": null,
+   "tum->en|short": 27.0,
+   "tum->en|medium": 30.3,
+   "tum->en|long": null
+  },
+  "luso-mt-tiny": {
+   "en->ny|short": 38.9,
+   "en->ny|medium": 45.4,
+   "en->ny|long": 48.1,
+   "ny->en|short": 40.3,
+   "ny->en|medium": 45.3,
+   "ny->en|long": 46.7,
+   "en->tum|short": 26.1,
+   "en->tum|medium": 35.8,
+   "en->tum|long": null,
+   "tum->en|short": 26.6,
+   "tum->en|medium": 29.4,
+   "tum->en|long": null
+  },
+  "luso-mt-3b": {
+   "en->ny|short": 47.3,
+   "en->ny|medium": 50.8,
+   "en->ny|long": 53.1,
+   "ny->en|short": 50.2,
+   "ny->en|medium": 54.6,
+   "ny->en|long": 56.3,
+   "en->tum|short": 31.2,
+   "en->tum|medium": 41.7,
+   "en->tum|long": null,
+   "tum->en|short": 32.4,
+   "tum->en|medium": 36.7,
+   "tum->en|long": null
+  },
+  "luso-mt-teacher": {
+   "en->ny|short": 43.4,
+   "en->ny|medium": 49.6,
+   "en->ny|long": 50.9,
+   "ny->en|short": 50.0,
+   "ny->en|medium": 53.3,
+   "ny->en|long": 55.1,
+   "en->tum|short": 28.3,
+   "en->tum|medium": 38.4,
+   "en->tum|long": null,
+   "tum->en|short": 30.3,
+   "tum->en|medium": 35.2,
+   "tum->en|long": null
+  },
+  "nllb-200-distilled-600M": {
+   "en->ny|short": 47.3,
+   "en->ny|medium": 48.9,
+   "en->ny|long": 51.5,
+   "ny->en|short": 49.7,
+   "ny->en|medium": 54.4,
+   "ny->en|long": 57.2,
+   "en->tum|short": 26.6,
+   "en->tum|medium": 39.6,
+   "en->tum|long": null,
+   "tum->en|short": 29.0,
+   "tum->en|medium": 33.1,
+   "tum->en|long": null
+  },
+  "madlad400-3b-mt": {
+   "en->ny|short": 33.9,
+   "en->ny|medium": 37.3,
+   "en->ny|long": 38.7,
+   "ny->en|short": 46.0,
+   "ny->en|medium": 50.7,
+   "ny->en|long": 53.1,
+   "en->tum|short": null,
+   "en->tum|medium": null,
+   "en->tum|long": null,
+   "tum->en|short": 23.3,
+   "tum->en|medium": 27.0,
+   "tum->en|long": null
+  },
+  "OPUS-MT": {
+   "en->ny|short": 36.4,
+   "en->ny|medium": 40.6,
+   "en->ny|long": 42.0,
+   "ny->en|short": 39.8,
+   "ny->en|medium": 42.4,
+   "ny->en|long": 43.5,
+   "en->tum|short": null,
+   "en->tum|medium": null,
+   "en->tum|long": null,
+   "tum->en|short": 22.7,
+   "tum->en|medium": 24.3,
+   "tum->en|long": null
+  }
+ },
+ "slice_sizes": {
+  "en->ny|short": 63,
+  "en->ny|medium": 302,
+  "en->ny|long": 135,
+  "ny->en|short": 84,
+  "ny->en|medium": 297,
+  "ny->en|long": 119,
+  "en->tum|short": 66,
+  "en->tum|medium": 432,
+  "en->tum|long": 2,
+  "tum->en|short": 65,
+  "tum->en|medium": 431,
+  "tum->en|long": 4
+ },
+ "langid": {
+  "luso-mt-small": {
+   "en": {
+    "en": 99.8,
+    "ny": 0.1,
+    "tum": 0.0,
+    "other": 0.1
+   },
+   "ny": {
+    "en": 1.8,
+    "ny": 98.2,
+    "tum": 0.0,
+    "other": 0.0
+   },
+   "tum": {
+    "en": 0.2,
+    "ny": 0.2,
+    "tum": 99.4,
+    "other": 0.2
+   }
+  },
+  "luso-mt-tiny": {
+   "en": {
+    "en": 100.0,
+    "ny": 0.0,
+    "tum": 0.0,
+    "other": 0.0
+   },
+   "ny": {
+    "en": 1.6,
+    "ny": 98.2,
+    "tum": 0.0,
+    "other": 0.2
+   },
+   "tum": {
+    "en": 0.2,
+    "ny": 0.6,
+    "tum": 99.0,
+    "other": 0.2
+   }
+  },
+  "luso-mt-3b": {
+   "en": {
+    "en": 100.0,
+    "ny": 0.0,
+    "tum": 0.0,
+    "other": 0.0
+   },
+   "ny": {
+    "en": 1.0,
+    "ny": 99.0,
+    "tum": 0.0,
+    "other": 0.0
+   },
+   "tum": {
+    "en": 0.2,
+    "ny": 0.4,
+    "tum": 99.2,
+    "other": 0.2
+   }
+  },
+  "luso-mt-teacher": {
+   "en": {
+    "en": 100.0,
+    "ny": 0.0,
+    "tum": 0.0,
+    "other": 0.0
+   },
+   "ny": {
+    "en": 0.8,
+    "ny": 99.0,
+    "tum": 0.0,
+    "other": 0.2
+   },
+   "tum": {
+    "en": 0.2,
+    "ny": 0.8,
+    "tum": 98.0,
+    "other": 1.0
+   }
+  },
+  "nllb-200-distilled-600M": {
+   "en": {
+    "en": 100.0,
+    "ny": 0.0,
+    "tum": 0.0,
+    "other": 0.0
+   },
+   "ny": {
+    "en": 0.4,
+    "ny": 99.6,
+    "tum": 0.0,
+    "other": 0.0
+   },
+   "tum": {
+    "en": 0.0,
+    "ny": 1.8,
+    "tum": 97.8,
+    "other": 0.4
+   }
+  },
+  "madlad400-3b-mt": {
+   "en": {
+    "en": 99.5,
+    "ny": 0.0,
+    "tum": 0.3,
+    "other": 0.2
+   },
+   "ny": {
+    "en": 3.2,
+    "ny": 96.2,
+    "tum": 0.0,
+    "other": 0.6
+   }
+  },
+  "OPUS-MT": {
+   "en": {
+    "en": 99.8,
+    "ny": 0.0,
+    "tum": 0.0,
+    "other": 0.2
+   },
+   "ny": {
+    "en": 0.4,
+    "ny": 99.4,
+    "tum": 0.0,
+    "other": 0.2
+   }
+  }
+ }
+}

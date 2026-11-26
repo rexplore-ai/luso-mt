@@ -1,0 +1,949 @@
+{
+ "significance": {
+  "luso-mt-small": {
+   "en->ny": {
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 47.6,
+      "mean": 47.6,
+      "ci95": 1.2,
+      "p_vs_base": null
+     },
+     "BLEU": {
+      "score": 20.1,
+      "mean": 20.1,
+      "ci95": 1.7,
+      "p_vs_base": null
+     }
+    },
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 46.3,
+      "mean": 46.3,
+      "ci95": 1.2,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 19.1,
+      "mean": 19.1,
+      "ci95": 1.5,
+      "p_vs_base": 0.008
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 49.9,
+      "mean": 49.9,
+      "ci95": 1.3,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 21.9,
+      "mean": 21.9,
+      "ci95": 1.7,
+      "p_vs_base": 0.001
+     }
+    },
+    "opus-mt-en-ny": {
+     "chrF++": {
+      "score": 41.0,
+      "mean": 41.0,
+      "ci95": 1.0,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 12.0,
+      "mean": 12.0,
+      "ci95": 1.1,
+      "p_vs_base": 0.001
+     }
+    },
+    "opus-mt-en-mul": {
+     "chrF++": {
+      "score": 41.4,
+      "mean": 41.4,
+      "ci95": 1.0,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 13.0,
+      "mean": 13.0,
+      "ci95": 1.3,
+      "p_vs_base": 0.001
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 50.0,
+      "mean": 50.0,
+      "ci95": 1.4,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 20.1,
+      "mean": 20.2,
+      "ci95": 1.7,
+      "p_vs_base": 0.3996
+     }
+    },
+    "madlad400-3b-mt": {
+     "chrF++": {
+      "score": 37.8,
+      "mean": 37.8,
+      "ci95": 1.5,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 11.5,
+      "mean": 11.5,
+      "ci95": 1.5,
+      "p_vs_base": 0.001
+     }
+    }
+   },
+   "ny->en": {
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 46.9,
+      "mean": 46.9,
+      "ci95": 1.2,
+      "p_vs_base": null
+     },
+     "BLEU": {
+      "score": 23.6,
+      "mean": 23.6,
+      "ci95": 1.6,
+      "p_vs_base": null
+     }
+    },
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 45.5,
+      "mean": 45.5,
+      "ci95": 1.2,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 22.0,
+      "mean": 22.0,
+      "ci95": 1.5,
+      "p_vs_base": 0.001
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 53.8,
+      "mean": 53.8,
+      "ci95": 1.2,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 31.4,
+      "mean": 31.4,
+      "ci95": 1.8,
+      "p_vs_base": 0.001
+     }
+    },
+    "opus-mt-ny-en": {
+     "chrF++": {
+      "score": 42.7,
+      "mean": 42.7,
+      "ci95": 1.1,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 18.6,
+      "mean": 18.6,
+      "ci95": 1.4,
+      "p_vs_base": 0.001
+     }
+    },
+    "opus-mt-mul-en": {
+     "chrF++": {
+      "score": 41.8,
+      "mean": 41.8,
+      "ci95": 1.1,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 18.9,
+      "mean": 19.0,
+      "ci95": 1.7,
+      "p_vs_base": 0.001
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 55.2,
+      "mean": 55.2,
+      "ci95": 1.3,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 34.2,
+      "mean": 34.2,
+      "ci95": 2.0,
+      "p_vs_base": 0.001
+     }
+    },
+    "madlad400-3b-mt": {
+     "chrF++": {
+      "score": 51.3,
+      "mean": 51.4,
+      "ci95": 1.2,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 30.7,
+      "mean": 30.7,
+      "ci95": 1.8,
+      "p_vs_base": 0.001
+     }
+    }
+   },
+   "en->tum": {
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 35.8,
+      "mean": 35.8,
+      "ci95": 1.0,
+      "p_vs_base": null
+     },
+     "BLEU": {
+      "score": 8.2,
+      "mean": 8.2,
+      "ci95": 1.0,
+      "p_vs_base": null
+     }
+    },
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 34.9,
+      "mean": 34.9,
+      "ci95": 1.0,
+      "p_vs_base": 0.007
+     },
+     "BLEU": {
+      "score": 8.1,
+      "mean": 8.1,
+      "ci95": 1.0,
+      "p_vs_base": 0.3377
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 37.5,
+      "mean": 37.5,
+      "ci95": 1.3,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 9.7,
+      "mean": 9.7,
+      "ci95": 1.2,
+      "p_vs_base": 0.006
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 38.2,
+      "mean": 38.2,
+      "ci95": 1.3,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 13.0,
+      "mean": 13.0,
+      "ci95": 1.5,
+      "p_vs_base": 0.001
+     }
+    }
+   },
+   "tum->en": {
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 30.0,
+      "mean": 30.0,
+      "ci95": 0.9,
+      "p_vs_base": null
+     },
+     "BLEU": {
+      "score": 8.8,
+      "mean": 8.7,
+      "ci95": 1.1,
+      "p_vs_base": null
+     }
+    },
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 29.1,
+      "mean": 29.1,
+      "ci95": 0.9,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 7.9,
+      "mean": 7.9,
+      "ci95": 1.0,
+      "p_vs_base": 0.008
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 34.7,
+      "mean": 34.7,
+      "ci95": 1.1,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 12.7,
+      "mean": 12.6,
+      "ci95": 1.4,
+      "p_vs_base": 0.001
+     }
+    },
+    "opus-mt-tum-en": {
+     "chrF++": {
+      "score": 24.1,
+      "mean": 24.1,
+      "ci95": 0.8,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 5.4,
+      "mean": 5.3,
+      "ci95": 0.8,
+      "p_vs_base": 0.001
+     }
+    },
+    "opus-mt-mul-en": {
+     "chrF++": {
+      "score": 22.1,
+      "mean": 22.0,
+      "ci95": 0.7,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 3.4,
+      "mean": 3.4,
+      "ci95": 0.7,
+      "p_vs_base": 0.001
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 32.7,
+      "mean": 32.8,
+      "ci95": 1.1,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 12.0,
+      "mean": 12.1,
+      "ci95": 1.3,
+      "p_vs_base": 0.001
+     }
+    },
+    "madlad400-3b-mt": {
+     "chrF++": {
+      "score": 26.8,
+      "mean": 26.8,
+      "ci95": 1.1,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 5.9,
+      "mean": 5.9,
+      "ci95": 1.1,
+      "p_vs_base": 0.001
+     }
+    }
+   }
+  },
+  "luso-mt-tiny": {
+   "en->ny": {
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 46.3,
+      "mean": 46.3,
+      "ci95": 1.2,
+      "p_vs_base": null
+     },
+     "BLEU": {
+      "score": 19.1,
+      "mean": 19.1,
+      "ci95": 1.5,
+      "p_vs_base": null
+     }
+    },
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 47.6,
+      "mean": 47.6,
+      "ci95": 1.2,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 20.1,
+      "mean": 20.1,
+      "ci95": 1.7,
+      "p_vs_base": 0.008
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 49.9,
+      "mean": 49.9,
+      "ci95": 1.3,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 21.9,
+      "mean": 21.9,
+      "ci95": 1.7,
+      "p_vs_base": 0.001
+     }
+    },
+    "opus-mt-en-ny": {
+     "chrF++": {
+      "score": 41.0,
+      "mean": 41.0,
+      "ci95": 1.0,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 12.0,
+      "mean": 12.0,
+      "ci95": 1.1,
+      "p_vs_base": 0.001
+     }
+    },
+    "opus-mt-en-mul": {
+     "chrF++": {
+      "score": 41.4,
+      "mean": 41.4,
+      "ci95": 1.0,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 13.0,
+      "mean": 13.0,
+      "ci95": 1.3,
+      "p_vs_base": 0.001
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 50.0,
+      "mean": 50.0,
+      "ci95": 1.4,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 20.1,
+      "mean": 20.2,
+      "ci95": 1.7,
+      "p_vs_base": 0.041
+     }
+    },
+    "madlad400-3b-mt": {
+     "chrF++": {
+      "score": 37.8,
+      "mean": 37.8,
+      "ci95": 1.5,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 11.5,
+      "mean": 11.5,
+      "ci95": 1.5,
+      "p_vs_base": 0.001
+     }
+    }
+   },
+   "ny->en": {
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 45.5,
+      "mean": 45.5,
+      "ci95": 1.2,
+      "p_vs_base": null
+     },
+     "BLEU": {
+      "score": 22.0,
+      "mean": 22.0,
+      "ci95": 1.5,
+      "p_vs_base": null
+     }
+    },
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 46.9,
+      "mean": 46.9,
+      "ci95": 1.2,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 23.6,
+      "mean": 23.6,
+      "ci95": 1.6,
+      "p_vs_base": 0.001
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 53.8,
+      "mean": 53.8,
+      "ci95": 1.2,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 31.4,
+      "mean": 31.4,
+      "ci95": 1.8,
+      "p_vs_base": 0.001
+     }
+    },
+    "opus-mt-ny-en": {
+     "chrF++": {
+      "score": 42.7,
+      "mean": 42.7,
+      "ci95": 1.1,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 18.6,
+      "mean": 18.6,
+      "ci95": 1.4,
+      "p_vs_base": 0.001
+     }
+    },
+    "opus-mt-mul-en": {
+     "chrF++": {
+      "score": 41.8,
+      "mean": 41.8,
+      "ci95": 1.1,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 18.9,
+      "mean": 19.0,
+      "ci95": 1.7,
+      "p_vs_base": 0.001
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 55.2,
+      "mean": 55.2,
+      "ci95": 1.3,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 34.2,
+      "mean": 34.2,
+      "ci95": 2.0,
+      "p_vs_base": 0.001
+     }
+    },
+    "madlad400-3b-mt": {
+     "chrF++": {
+      "score": 51.3,
+      "mean": 51.4,
+      "ci95": 1.2,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 30.7,
+      "mean": 30.7,
+      "ci95": 1.8,
+      "p_vs_base": 0.001
+     }
+    }
+   },
+   "en->tum": {
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 34.9,
+      "mean": 34.9,
+      "ci95": 1.0,
+      "p_vs_base": null
+     },
+     "BLEU": {
+      "score": 8.1,
+      "mean": 8.1,
+      "ci95": 1.0,
+      "p_vs_base": null
+     }
+    },
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 35.8,
+      "mean": 35.8,
+      "ci95": 1.0,
+      "p_vs_base": 0.007
+     },
+     "BLEU": {
+      "score": 8.2,
+      "mean": 8.2,
+      "ci95": 1.0,
+      "p_vs_base": 0.3377
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 37.5,
+      "mean": 37.5,
+      "ci95": 1.3,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 9.7,
+      "mean": 9.7,
+      "ci95": 1.2,
+      "p_vs_base": 0.008
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 38.2,
+      "mean": 38.2,
+      "ci95": 1.3,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 13.0,
+      "mean": 13.0,
+      "ci95": 1.5,
+      "p_vs_base": 0.001
+     }
+    }
+   },
+   "tum->en": {
+    "luso-mt-tiny": {
+     "chrF++": {
+      "score": 29.1,
+      "mean": 29.1,
+      "ci95": 0.9,
+      "p_vs_base": null
+     },
+     "BLEU": {
+      "score": 7.9,
+      "mean": 7.9,
+      "ci95": 1.0,
+      "p_vs_base": null
+     }
+    },
+    "luso-mt-small": {
+     "chrF++": {
+      "score": 30.0,
+      "mean": 30.0,
+      "ci95": 0.9,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 8.8,
+      "mean": 8.7,
+      "ci95": 1.1,
+      "p_vs_base": 0.008
+     }
+    },
+    "luso-mt-teacher": {
+     "chrF++": {
+      "score": 34.7,
+      "mean": 34.7,
+      "ci95": 1.1,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 12.7,
+      "mean": 12.6,
+      "ci95": 1.4,
+      "p_vs_base": 0.001
+     }
+    },
+    "opus-mt-tum-en": {
+     "chrF++": {
+      "score": 24.1,
+      "mean": 24.1,
+      "ci95": 0.8,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 5.4,
+      "mean": 5.3,
+      "ci95": 0.8,
+      "p_vs_base": 0.001
+     }
+    },
+    "opus-mt-mul-en": {
+     "chrF++": {
+      "score": 22.1,
+      "mean": 22.0,
+      "ci95": 0.7,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 3.4,
+      "mean": 3.4,
+      "ci95": 0.7,
+      "p_vs_base": 0.001
+     }
+    },
+    "nllb-200-distilled-600M": {
+     "chrF++": {
+      "score": 32.7,
+      "mean": 32.8,
+      "ci95": 1.1,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 12.0,
+      "mean": 12.1,
+      "ci95": 1.3,
+      "p_vs_base": 0.001
+     }
+    },
+    "madlad400-3b-mt": {
+     "chrF++": {
+      "score": 26.8,
+      "mean": 26.8,
+      "ci95": 1.1,
+      "p_vs_base": 0.001
+     },
+     "BLEU": {
+      "score": 5.9,
+      "mean": 5.9,
+      "ci95": 1.1,
+      "p_vs_base": 0.001
+     }
+    }
+   }
+  }
+ },
+ "fertility": {
+  "luso-mt-tiny (16k)": {
+   "en": {
+    "fertility": 1.56,
+    "chars_per_token": 3.86,
+    "split_word_share": 0.284,
+    "sentences": 1000,
+    "words": 17295
+   },
+   "ny": {
+    "fertility": 1.69,
+    "chars_per_token": 4.35,
+    "split_word_share": 0.409,
+    "sentences": 500,
+    "words": 9409
+   },
+   "tum": {
+    "fertility": 1.81,
+    "chars_per_token": 4.06,
+    "split_word_share": 0.454,
+    "sentences": 500,
+    "words": 7115
+   }
+  },
+  "luso-mt-small (32k)": {
+   "en": {
+    "fertility": 1.41,
+    "chars_per_token": 4.26,
+    "split_word_share": 0.243,
+    "sentences": 1000,
+    "words": 17295
+   },
+   "ny": {
+    "fertility": 1.53,
+    "chars_per_token": 4.82,
+    "split_word_share": 0.34,
+    "sentences": 500,
+    "words": 9409
+   },
+   "tum": {
+    "fertility": 1.65,
+    "chars_per_token": 4.45,
+    "split_word_share": 0.404,
+    "sentences": 500,
+    "words": 7115
+   }
+  },
+  "NLLB-200 (256k)": {
+   "en": {
+    "fertility": 1.44,
+    "chars_per_token": 4.2,
+    "split_word_share": 0.293,
+    "sentences": 1000,
+    "words": 17295
+   },
+   "ny": {
+    "fertility": 1.79,
+    "chars_per_token": 4.11,
+    "split_word_share": 0.489,
+    "sentences": 500,
+    "words": 9409
+   },
+   "tum": {
+    "fertility": 1.86,
+    "chars_per_token": 3.94,
+    "split_word_share": 0.513,
+    "sentences": 500,
+    "words": 7115
+   }
+  },
+  "MADLAD-400 (256k)": {
+   "en": {
+    "fertility": 1.48,
+    "chars_per_token": 4.07,
+    "split_word_share": 0.316,
+    "sentences": 1000,
+    "words": 17295
+   },
+   "ny": {
+    "fertility": 1.87,
+    "chars_per_token": 3.94,
+    "split_word_share": 0.549,
+    "sentences": 500,
+    "words": 9409
+   },
+   "tum": {
+    "fertility": 2.02,
+    "chars_per_token": 3.63,
+    "split_word_share": 0.603,
+    "sentences": 500,
+    "words": 7115
+   }
+  },
+  "OPUS-MT en-ny (source)": {
+   "en": {
+    "fertility": 1.32,
+    "chars_per_token": 4.57,
+    "split_word_share": 0.209,
+    "sentences": 1000,
+    "words": 17295
+   },
+   "ny": {
+    "fertility": 3.39,
+    "chars_per_token": 2.17,
+    "split_word_share": 0.874,
+    "sentences": 500,
+    "words": 9409
+   },
+   "tum": {
+    "fertility": 3.54,
+    "chars_per_token": 2.07,
+    "split_word_share": 0.858,
+    "sentences": 500,
+    "words": 7115
+   }
+  }
+ },
+ "data_table": [
+  {
+   "tgt_lang": "ny",
+   "release": "internal",
+   "origin": "mt-gemini",
+   "pairs": 403327,
+   "en_words": 7522007,
+   "xx_words": 5903308
+  },
+  {
+   "tgt_lang": "ny",
+   "release": "public",
+   "origin": "human",
+   "pairs": 3686,
+   "en_words": 63166,
+   "xx_words": 53464
+  },
+  {
+   "tgt_lang": "ny",
+   "release": "public",
+   "origin": "mt-gemini",
+   "pairs": 85063,
+   "en_words": 1903573,
+   "xx_words": 1463772
+  },
+  {
+   "tgt_lang": "ny",
+   "release": "public",
+   "origin": "mt-gemma",
+   "pairs": 1692,
+   "en_words": 149793,
+   "xx_words": 122778
+  },
+  {
+   "tgt_lang": "tum",
+   "release": "internal",
+   "origin": "mt-gemini",
+   "pairs": 51057,
+   "en_words": 837718,
+   "xx_words": 697429
+  },
+  {
+   "tgt_lang": "tum",
+   "release": "public",
+   "origin": "human",
+   "pairs": 1597,
+   "en_words": 23867,
+   "xx_words": 20490
+  },
+  {
+   "tgt_lang": "tum",
+   "release": "public",
+   "origin": "mt-gemini",
+   "pairs": 50938,
+   "en_words": 901164,
+   "xx_words": 921212
+  }
+ ],
+ "data_totals": {
+  "pairs": 597360,
+  "en_words": 11401288,
+  "xx_words": 9182453,
+  "by_lang": {
+   "ny": 493768,
+   "tum": 103592
+  },
+  "by_lang_release": {
+   "ny-internal": 403327,
+   "ny-public": 90441,
+   "tum-internal": 51057,
+   "tum-public": 52535
+  },
+  "bt_share": 0.496
+ },
+ "length_stats": {
+  "ny": {
+   "xx_mean_words": 15.3,
+   "en_mean_words": 19.5,
+   "xx_per_en_word": 0.783,
+   "p95_xx_words": 31
+  },
+  "tum": {
+   "xx_mean_words": 15.8,
+   "en_mean_words": 17.0,
+   "xx_per_en_word": 0.93,
+   "p95_xx_words": 32
+  }
+ },
+ "heldout": {
+  "test": {
+   "en->ny": 500,
+   "en->tum": 500,
+   "ny->en": 500,
+   "tum->en": 500
+  },
+  "dev": {
+   "en->ny": 500,
+   "en->tum": 300,
+   "ny->en": 500,
+   "tum->en": 300
+  },
+  "test_mean_words": {
+   "en->ny": 20.2,
+   "en->tum": 14.4,
+   "ny->en": 18.8,
+   "tum->en": 14.2
+  }
+ }
+}

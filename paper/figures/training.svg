@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 520" width="1240" height="520" role="img" aria-labelledby="t d" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <title id="t">luso-mt training pipeline</title>
+  <desc id="d">Data is filtered into luso-mt-data with fixed held-out test sets. Step 1 fine-tunes the pretrained MADLAD-400 3B model into a teacher. Step 2 trains small students from scratch on the original pairs and the teacher's translations, which are then evaluated and exported for phones.</desc>
+  <style>
+    .bg { fill: #ffffff; }
+    .src { fill: #eef1f4; stroke: #8a96a6; stroke-width: 1.3; }
+    .data { fill: #ece4f7; stroke: #8a63c7; stroke-width: 1.4; }
+    .held { fill: #fff5f5; stroke: #c43d3d; stroke-width: 1.4; stroke-dasharray: 6 4; }
+    .grp { fill: #f6f8fb; stroke: #8fa0b5; stroke-width: 1.4; }
+    .big { fill: #fde3cf; stroke: #e07b39; stroke-width: 1.4; }
+    .step { fill: #ffffff; stroke: #5b6b86; stroke-width: 1.2; }
+    .teach { fill: #fbd0b0; stroke: #c9581b; stroke-width: 1.6; }
+    .stu { fill: #d6ecfa; stroke: #008fdb; stroke-width: 1.5; }
+    .eval { fill: #fff3c4; stroke: #c9a227; stroke-width: 1.4; }
+    .ship { fill: #e3f3ea; stroke: #2f9e6a; stroke-width: 1.4; }
+    .line { fill: none; stroke: #041023; stroke-width: 1.6; }
+    .kd { fill: none; stroke: #c9581b; stroke-width: 2; }
+    .dash { fill: none; stroke: #c43d3d; stroke-width: 1.4; stroke-dasharray: 6 4; }
+    .t { fill: #041023; font-size: 14.5px; font-weight: 600; text-anchor: middle; }
+    .s { fill: #3d4a5c; font-size: 11.5px; text-anchor: middle; }
+    .g { fill: #041023; font-size: 15px; font-weight: 700; }
+    .gs { fill: #5b6b86; font-size: 12px; }
+    .red { fill: #c43d3d; font-size: 11.5px; font-weight: 600; text-anchor: middle; }
+    .or { fill: #c9581b; font-size: 11.5px; font-weight: 600; }
+    .chip { fill: #008fdb; }
+    .ct { fill: #ffffff; font-size: 12.5px; font-weight: 700; text-anchor: middle; }
+    .cs { fill: #ffffff; font-size: 10.5px; text-anchor: middle; }
+    .chipx { fill: #ffffff; stroke: #8a96a6; stroke-width: 1.2; stroke-dasharray: 4 3; }
+    .ctx { fill: #5b6b86; font-size: 12.5px; font-weight: 700; text-anchor: middle; }
+    .csx { fill: #5b6b86; font-size: 10.5px; text-anchor: middle; }
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#041023"/></marker>
+    <marker id="ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c9581b"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c43d3d"/></marker>
+  </defs>
+  <rect class="bg" width="1240" height="520"/>
+
+  <!-- sources -->
+  <text class="g" x="24" y="44">Data</text>
+  <rect class="src" x="24" y="70" width="190" height="66" rx="8"/>
+  <text class="t" x="119" y="96">luso-corpus-001</text>
+  <text class="s" x="119" y="114">502k Chichewa–English pairs</text>
+  <text class="s" x="119" y="128">Malawian web, Wikipedia, SMOL</text>
+  <rect class="src" x="24" y="152" width="190" height="66" rx="8"/>
+  <text class="t" x="119" y="178">Tumbuka corpus</text>
+  <text class="s" x="119" y="196">104k sentences</text>
+  <text class="s" x="119" y="210">translated to English (Gemini)</text>
+  <rect class="src" x="24" y="234" width="190" height="52" rx="8"/>
+  <text class="t" x="119" y="257">Human translations</text>
+  <text class="s" x="119" y="274">SMOL en–ny, en–tum</text>
+
+  <path class="line" d="M214,103 H244 V170 H262" marker-end="url(#a)"/>
+  <path class="line" d="M214,185 H262" marker-end="url(#a)"/>
+  <path class="line" d="M214,260 H244 V200 H262" marker-end="url(#a)"/>
+
+  <rect class="data" x="264" y="120" width="200" height="132" rx="8"/>
+  <text class="t" x="364" y="146">luso-mt-data</text>
+  <text class="s" x="364" y="168">4 directions, each pair both ways</text>
+  <text class="s" x="364" y="186">dedupe · length and ratio filter</text>
+  <text class="s" x="364" y="204">8-word leak filter vs dev/test</text>
+  <text class="s" x="364" y="222">&lt;bt&gt; tag on machine-made sources</text>
+  <text class="s" x="364" y="240">public / restricted kept apart</text>
+
+  <rect class="held" x="264" y="300" width="200" height="74" rx="8"/>
+  <text class="t" x="364" y="324">Fixed test and dev sets</text>
+  <text class="s" x="364" y="342">NTREX-128 · SMOL</text>
+  <text class="red" x="364" y="362">never trained on</text>
+
+  <!-- step 1 -->
+  <rect class="grp" x="504" y="60" width="250" height="324" rx="14"/>
+  <text class="g" x="522" y="88">Step 1 · Transfer</text>
+  <text class="gs" x="522" y="106">start from what a big model knows</text>
+  <rect class="big" x="524" y="122" width="210" height="58" rx="8"/>
+  <text class="t" x="629" y="146">MADLAD-400 3B</text>
+  <text class="s" x="629" y="164">400+ languages · Apache-2.0</text>
+  <path class="line" d="M629,180 V206" marker-end="url(#a)"/>
+  <rect class="step" x="524" y="208" width="210" height="58" rx="8"/>
+  <text class="t" x="629" y="232">Fine-tune on luso-mt-data</text>
+  <text class="s" x="629" y="250">lr 1e-4 · 1 epoch · learns &lt;2tum&gt;</text>
+  <path class="line" d="M629,266 V280 H572 V292" marker-end="url(#a)"/>
+  <rect class="teach" x="520" y="294" width="104" height="50" rx="8"/>
+  <text class="t" x="572" y="317">Teacher</text>
+  <text class="s" x="572" y="334">public data</text>
+  <path class="line" d="M624,319 H636" marker-end="url(#a)"/>
+  <rect class="teach" x="638" y="294" width="106" height="50" rx="8"/>
+  <text class="t" x="691" y="317">luso-mt-3b</text>
+  <text class="s" x="691" y="334">+ full corpus</text>
+  <path class="line" d="M464,186 H494 V237 H522" marker-end="url(#a)"/>
+
+  <!-- step 2 -->
+  <rect class="grp" x="794" y="60" width="260" height="324" rx="14"/>
+  <text class="g" x="812" y="88">Step 2 · Compress</text>
+  <text class="gs" x="812" y="106">small models learn from the teacher</text>
+  <rect class="step" x="814" y="122" width="220" height="58" rx="8"/>
+  <text class="t" x="924" y="146">Distilled targets</text>
+  <text class="s" x="924" y="164">teacher translates the training sources</text>
+  <path class="kd" d="M572,344 V364 H772 V151 H812" marker-end="url(#ak)"/>
+  <path class="line" d="M924,180 V206" marker-end="url(#a)"/>
+  <rect class="step" x="814" y="208" width="220" height="58" rx="8"/>
+  <text class="t" x="924" y="232">Students, from scratch</text>
+  <text class="s" x="924" y="250">original pairs + distilled targets</text>
+  <path class="line" d="M464,246 H478 V404 H786 V252 H812" marker-end="url(#a)"/>
+  <text class="gs" x="520" y="398">the original pairs also go to the students</text>
+  <path class="line" d="M924,266 V290" marker-end="url(#a)"/>
+  <rect class="chip" x="846" y="292" width="72" height="46" rx="8"/>
+  <text class="ct" x="882" y="313">tiny</text><text class="cs" x="882" y="329">19.9M</text>
+  <rect class="chip" x="930" y="292" width="72" height="46" rx="8"/>
+  <text class="ct" x="966" y="313">small</text><text class="cs" x="966" y="329">87.7M</text>
+  <text class="gs" x="924" y="364" text-anchor="middle">deep encoder · shallow decoder</text>
+
+  <!-- evaluate + ship -->
+  <rect class="eval" x="1086" y="122" width="134" height="108" rx="8"/>
+  <text class="t" x="1153" y="146">Evaluate</text>
+  <text class="s" x="1153" y="166">chrF++ · BLEU</text>
+  <text class="s" x="1153" y="182">score, slice,</text>
+  <text class="s" x="1153" y="196">language-confusion</text>
+  <text class="s" x="1153" y="210">and win matrices</text>
+  <path class="line" d="M1002,315 H1060 V176 H1084" marker-end="url(#a)"/>
+  <path class="line" d="M1153,230 V262" marker-end="url(#a)"/>
+  <rect class="ship" x="1086" y="264" width="134" height="80" rx="8"/>
+  <text class="t" x="1153" y="288">Phone</text>
+  <text class="s" x="1153" y="306">int8 quantised</text>
+  <text class="s" x="1153" y="322">runs offline</text>
+
+  <!-- held-out sets only feed evaluation -->
+  <path class="dash" d="M364,374 V432 H1153 V346" marker-end="url(#ar)"/>
+  <text class="red" x="760" y="450">scored only, after training (and a train-vs-dev gap check for memorisation)</text>
+
+  <!-- legend -->
+  <g transform="translate(24,484)">
+    <rect class="big" x="0" y="0" width="16" height="16" rx="3"/><text class="gs" x="24" y="13">pretrained model</text>
+    <rect class="teach" x="150" y="0" width="16" height="16" rx="3"/><text class="gs" x="174" y="13">teacher, luso-mt-3b</text>
+    <rect class="chip" x="300" y="0" width="16" height="16" rx="3"/><text class="gs" x="324" y="13">released students (luso-mt)</text>
+    <rect class="held" x="510" y="0" width="16" height="16" rx="3"/><text class="gs" x="534" y="13">held out</text>
+    <path class="kd" d="M620,8 H656" marker-end="url(#ak)"/><text class="gs" x="664" y="13">knowledge distillation</text>
+  </g>
+</svg>

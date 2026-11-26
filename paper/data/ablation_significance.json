@@ -1,0 +1,62 @@
+{
+ "tiny": {
+  "en->ny": {
+   "baseline": 42.0,
+   "distilled": 46.3,
+   "delta": 4.3,
+   "p": 0.001,
+   "ci_distilled": 1.2
+  },
+  "ny->en": {
+   "baseline": 42.6,
+   "distilled": 45.5,
+   "delta": 2.9,
+   "p": 0.001,
+   "ci_distilled": 1.2
+  },
+  "en->tum": {
+   "baseline": 30.9,
+   "distilled": 34.9,
+   "delta": 4.0,
+   "p": 0.001,
+   "ci_distilled": 1.0
+  },
+  "tum->en": {
+   "baseline": 26.2,
+   "distilled": 29.1,
+   "delta": 2.9,
+   "p": 0.001,
+   "ci_distilled": 0.9
+  }
+ },
+ "small": {
+  "en->ny": {
+   "baseline": 42.6,
+   "distilled": 47.6,
+   "delta": 5.0,
+   "p": 0.001,
+   "ci_distilled": 1.2
+  },
+  "ny->en": {
+   "baseline": 41.8,
+   "distilled": 46.9,
+   "delta": 5.1,
+   "p": 0.001,
+   "ci_distilled": 1.2
+  },
+  "en->tum": {
+   "baseline": 32.0,
+   "distilled": 35.8,
+   "delta": 3.8,
+   "p": 0.001,
+   "ci_distilled": 1.0
+  },
+  "tum->en": {
+   "baseline": 26.5,
+   "distilled": 30.0,
+   "delta": 3.5,
+   "p": 0.001,
+   "ci_distilled": 0.9
+  }
+ }
+}

@@ -1,0 +1,8 @@
+name: small-kd
+script: training/train_luso_mt.py
+repo_prefix: suru8-ai/luso-mt-exp-small-kd
+args:
+  size: small
+  public_only: true
+  kd: suru8-ai/luso-mt-data
+  epochs: 30

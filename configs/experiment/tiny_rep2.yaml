@@ -1,0 +1,9 @@
+# Matched-exposure control: original pairs repeated twice, same epoch cap as the distilled run.
+name: tiny-rep2
+script: training/train_luso_mt.py
+repo_prefix: suru8-ai/luso-mt-exp-tiny-rep2
+args:
+  size: tiny
+  public_only: true
+  repeat_original: 2
+  epochs: 30

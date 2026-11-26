@@ -1,0 +1,23 @@
+# Launch configuration for luso-mt training on Hugging Face Jobs.
+#   python launch.py experiment=tiny_kd seed=14                 one run
+#   python launch.py -m experiment=tiny_kd seed=13,14,15        seed sweep (Hydra multirun)
+#   python launch.py -m experiment=tiny_kd,tiny_base seed=13,14,15 dry_run=true
+defaults:
+  - experiment: tiny_kd
+  - _self_
+
+seed: 13
+dry_run: false            # print the job command instead of submitting it
+
+hf:
+  namespace: suru8-ai
+  flavor: l4x1
+  timeout: 10h
+  secrets: [HF_TOKEN, WANDB_API_KEY]
+
+hydra:
+  run:
+    dir: outputs/${now:%Y-%m-%d}/${experiment.name}-s${seed}
+  sweep:
+    dir: outputs/${now:%Y-%m-%d}
+    subdir: ${experiment.name}-s${seed}

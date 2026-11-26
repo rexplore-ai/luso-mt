@@ -1,0 +1,7 @@
+name: tiny-base
+script: training/train_luso_mt.py
+repo_prefix: suru8-ai/luso-mt-exp-tiny-base
+args:
+  size: tiny
+  public_only: true
+  epochs: 20

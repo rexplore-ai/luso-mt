@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 1240" width="1040" height="1240" role="img" aria-labelledby="t d" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <title id="t">luso-mt architecture</title>
+  <desc id="d">Encoder-decoder Transformer with a deep encoder and a shallow decoder, RMSNorm pre-normalisation, gated-GELU feed-forward layers, relative position attention, a shared SentencePiece vocabulary, target-language tags and tied embeddings.</desc>
+  <style>
+    .bg { fill: #ffffff; }
+    .stack { fill: #f3f6fa; stroke: #8fa0b5; stroke-width: 1.5; }
+    .stack2 { fill: #e9eef5; stroke: #b6c2d1; stroke-width: 1.2; }
+    .norm { fill: #fff3c4; stroke: #c9a227; stroke-width: 1.4; }
+    .attn { fill: #fde3cf; stroke: #e07b39; stroke-width: 1.4; }
+    .xattn { fill: #fbd0b0; stroke: #c9581b; stroke-width: 1.6; }
+    .ffn { fill: #d6ecfa; stroke: #008fdb; stroke-width: 1.4; }
+    .emb { fill: #ece4f7; stroke: #8a63c7; stroke-width: 1.4; }
+    .tok { fill: #eef1f4; stroke: #8a96a6; stroke-width: 1.2; }
+    .out { fill: #e3f3ea; stroke: #2f9e6a; stroke-width: 1.4; }
+    .io { fill: #ffffff; stroke: #041023; stroke-width: 1.2; }
+    .line { fill: none; stroke: #041023; stroke-width: 1.6; }
+    .res { fill: none; stroke: #5b6b86; stroke-width: 1.4; }
+    .dot { fill: #5b6b86; }
+    .kv { fill: none; stroke: #c9581b; stroke-width: 2; }
+    .tie { fill: none; stroke: #8a63c7; stroke-width: 1.4; stroke-dasharray: 6 5; }
+    .add { fill: #ffffff; stroke: #041023; stroke-width: 1.5; }
+    .t { fill: #041023; font-size: 15px; font-weight: 600; text-anchor: middle; }
+    .s { fill: #3d4a5c; font-size: 11.5px; text-anchor: middle; }
+    .m { fill: #041023; font-size: 13px; text-anchor: middle; font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; }
+    .lab { fill: #041023; font-size: 17px; font-weight: 700; }
+    .rep { fill: #041023; font-size: 22px; font-weight: 700; }
+    .sub { fill: #5b6b86; font-size: 12px; }
+    .kvt { fill: #c9581b; font-size: 12.5px; font-weight: 700; }
+    .tiet { fill: #8a63c7; font-size: 12px; font-weight: 600; }
+    .c { fill: #008fdb; }
+    .cn { fill: #ffffff; font-size: 12px; font-weight: 700; text-anchor: middle; }
+    .plus { stroke: #041023; stroke-width: 1.6; }
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#041023"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6b86"/></marker>
+    <marker id="ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c9581b"/></marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1040" height="1240"/>
+    <text class="lab" x="112" y="548">Encoder</text>
+  <rect class="stack2" x="118" y="574" width="362" height="430" rx="14"/>
+  <rect class="stack2" x="112" y="568" width="362" height="430" rx="14"/>
+  <rect class="stack" x="106" y="562" width="362" height="430" rx="14"/>
+  <text class="rep" x="56" y="762" text-anchor="middle">N×</text>
+  <text class="sub" x="56" y="786" text-anchor="middle">tiny 8</text>
+  <text class="sub" x="56" y="802" text-anchor="middle">small 12</text>
+  <text class="sub" x="56" y="822" text-anchor="middle">(deep)</text>
+  <rect class="emb" x="150.0" y="1012" width="260" height="40" rx="6"/>
+  <text class="t" x="280" y="1037.0">Token embedding E</text>
+  <circle class="dot" cx="280" cy="972" r="3.4"/>
+  <path class="res" d="M284,972 H444 V808 H295" marker-end="url(#ar)"/>
+  <rect class="norm" x="150.0" y="912" width="260" height="32" rx="6"/>
+  <text class="t" x="280" y="933.0">RMSNorm</text>
+  <rect class="attn" x="150.0" y="836" width="260" height="54" rx="6"/>
+  <text class="t" x="280" y="861.0">Multi-head self-attention</text>
+  <text class="s" x="280" y="878.0">relative position buckets · bidirectional</text>
+  <circle class="add" cx="280" cy="808" r="12"/>
+  <path class="plus" d="M273,808 H287 M280,801 V815"/>
+  <circle class="dot" cx="280" cy="772" r="3.4"/>
+  <path class="res" d="M284,772 H444 V602 H295" marker-end="url(#ar)"/>
+  <rect class="norm" x="150.0" y="710" width="260" height="32" rx="6"/>
+  <text class="t" x="280" y="731.0">RMSNorm</text>
+  <rect class="ffn" x="150.0" y="628" width="260" height="54" rx="6"/>
+  <text class="t" x="280" y="653.0">Gated-GELU feed-forward</text>
+  <text class="s" x="280" y="670.0">GELU(xW₀) ⊙ (xW₁) · W₂</text>
+  <circle class="add" cx="280" cy="602" r="12"/>
+  <path class="plus" d="M273,602 H287 M280,595 V609"/>
+  <path class="line" d="M280,1012 V947" marker-end="url(#a)"/>
+  <path class="line" d="M280,912 V893" marker-end="url(#a)"/>
+  <path class="line" d="M280,836 V823" marker-end="url(#a)"/>
+  <path class="line" d="M280,796 V745" marker-end="url(#a)"/>
+  <path class="line" d="M280,710 V685" marker-end="url(#a)"/>
+  <path class="line" d="M280,628 V617" marker-end="url(#a)"/>
+  <path class="line" d="M280,590 V527" marker-end="url(#a)"/>
+  <rect class="norm" x="190.0" y="492" width="180" height="32" rx="6"/>
+  <text class="t" x="280" y="513.0">Final RMSNorm</text>
+  <text class="sub" x="294" y="480">encoder states h₁…hₙ</text>
+  <rect class="tok" x="125.0" y="1078" width="310" height="44" rx="6"/>
+  <text class="t" x="280" y="1098.0">SentencePiece unigram</text>
+  <text class="s" x="280" y="1115.0">one vocabulary for en · ny · tum (16k tiny, 32k small)</text>
+  <path class="line" d="M280,1078 V1055" marker-end="url(#a)"/>
+  <rect class="io" x="100" y="1152" width="360" height="40" rx="8"/>
+  <text class="m" x="280" y="1177">&lt;2ny&gt; Where is the nearest clinic?</text>
+  <path class="line" d="M280,1152 V1125" marker-end="url(#a)"/>
+  <text class="sub" x="280" y="1216" text-anchor="middle">source sentence with target-language tag</text>
+  <text class="lab" x="552" y="342">Decoder</text>
+  <rect class="stack2" x="552" y="362" width="362" height="636" rx="14"/>
+  <rect class="stack" x="546" y="356" width="362" height="636" rx="14"/>
+  <text class="rep" x="962" y="672" text-anchor="middle">N×</text>
+  <text class="sub" x="962" y="696" text-anchor="middle">tiny 2</text>
+  <text class="sub" x="962" y="712" text-anchor="middle">small 4</text>
+  <text class="sub" x="962" y="732" text-anchor="middle">(shallow)</text>
+  <rect class="emb" x="590.0" y="1012" width="260" height="40" rx="6"/>
+  <text class="t" x="720" y="1037.0">Token embedding E</text>
+  <circle class="dot" cx="720" cy="972" r="3.4"/>
+  <path class="res" d="M724,972 H884 V808 H735" marker-end="url(#ar)"/>
+  <rect class="norm" x="590.0" y="912" width="260" height="32" rx="6"/>
+  <text class="t" x="720" y="933.0">RMSNorm</text>
+  <rect class="attn" x="590.0" y="836" width="260" height="54" rx="6"/>
+  <text class="t" x="720" y="861.0">Causal self-attention</text>
+  <text class="s" x="720" y="878.0">sees only earlier output tokens</text>
+  <circle class="add" cx="720" cy="808" r="12"/>
+  <path class="plus" d="M713,808 H727 M720,801 V815"/>
+  <circle class="dot" cx="720" cy="772" r="3.4"/>
+  <path class="res" d="M724,772 H884 V602 H735" marker-end="url(#ar)"/>
+  <rect class="norm" x="590.0" y="710" width="260" height="32" rx="6"/>
+  <text class="t" x="720" y="731.0">RMSNorm</text>
+  <rect class="xattn" x="590.0" y="628" width="260" height="54" rx="6"/>
+  <text class="t" x="720" y="653.0">Cross-attention</text>
+  <text class="s" x="720" y="670.0">queries: decoder · keys, values: encoder</text>
+  <circle class="add" cx="720" cy="602" r="12"/>
+  <path class="plus" d="M713,602 H727 M720,595 V609"/>
+  <circle class="dot" cx="720" cy="566" r="3.4"/>
+  <path class="res" d="M724,566 H884 V396 H735" marker-end="url(#ar)"/>
+  <rect class="norm" x="590.0" y="504" width="260" height="32" rx="6"/>
+  <text class="t" x="720" y="525.0">RMSNorm</text>
+  <rect class="ffn" x="590.0" y="422" width="260" height="54" rx="6"/>
+  <text class="t" x="720" y="447.0">Gated-GELU feed-forward</text>
+  <text class="s" x="720" y="464.0">same form as the encoder</text>
+  <circle class="add" cx="720" cy="396" r="12"/>
+  <path class="plus" d="M713,396 H727 M720,389 V403"/>
+  <path class="line" d="M720,1012 V947" marker-end="url(#a)"/>
+  <path class="line" d="M720,912 V893" marker-end="url(#a)"/>
+  <path class="line" d="M720,836 V823" marker-end="url(#a)"/>
+  <path class="line" d="M720,796 V745" marker-end="url(#a)"/>
+  <path class="line" d="M720,710 V685" marker-end="url(#a)"/>
+  <path class="line" d="M720,628 V617" marker-end="url(#a)"/>
+  <path class="line" d="M720,590 V539" marker-end="url(#a)"/>
+  <path class="line" d="M720,504 V479" marker-end="url(#a)"/>
+  <path class="line" d="M720,422 V411" marker-end="url(#a)"/>
+  <path class="line" d="M720,384 V323" marker-end="url(#a)"/>
+  <rect class="norm" x="630.0" y="288" width="180" height="32" rx="6"/>
+  <text class="t" x="720" y="309.0">Final RMSNorm</text>
+  <path class="line" d="M720,288 V259" marker-end="url(#a)"/>
+  <rect class="emb" x="600.0" y="216" width="240" height="40" rx="6"/>
+  <text class="t" x="720" y="241.0">Linear · Eᵀ (tied)</text>
+  <path class="line" d="M720,216 V187" marker-end="url(#a)"/>
+  <rect class="out" x="625.0" y="152" width="190" height="32" rx="6"/>
+  <text class="t" x="720" y="173.0">Softmax · beam search</text>
+  <path class="line" d="M720,152 V123" marker-end="url(#a)"/>
+  <rect class="io" x="545" y="80" width="350" height="40" rx="8"/>
+  <text class="m" x="720" y="105">Chipatala chapafupi chili kuti?</text>
+  <text class="sub" x="720" y="64" text-anchor="middle">output, one token at a time</text>
+  <rect class="tok" x="565.0" y="1078" width="310" height="44" rx="6"/>
+  <text class="t" x="720" y="1098.0">Same vocabulary</text>
+  <text class="s" x="720" y="1115.0">tokens generated so far (shifted right)</text>
+  <path class="line" d="M720,1078 V1055" marker-end="url(#a)"/>
+  <rect class="io" x="545" y="1152" width="350" height="40" rx="8"/>
+  <text class="m" x="720" y="1177">&lt;s&gt; Chipatala chapafupi …</text>
+  <path class="line" d="M720,1152 V1125" marker-end="url(#a)"/>
+  <path class="kv" d="M280,492 V446 H508 V655 H587" marker-end="url(#ak)"/>
+  <text class="kvt" x="516" y="552">K, V</text>
+  <path class="tie" d="M410,1032 H590"/>
+  <text class="tiet" x="500" y="1024" text-anchor="middle">one matrix E</text>
+  <path class="tie" d="M840,236 H1010 V1032 H850"/>
+  <text class="tiet" x="925" y="228" text-anchor="middle">reuses E</text>
+  <circle class="c" cx="84" cy="1172" r="13"/><text class="cn" x="84" y="1176">1</text>
+  <circle class="c" cx="114" cy="1100" r="13"/><text class="cn" x="114" y="1104">2</text>
+  <circle class="c" cx="128" cy="1032" r="13"/><text class="cn" x="128" y="1036">3</text>
+  <circle class="c" cx="128" cy="928" r="13"/><text class="cn" x="128" y="932">4</text>
+  <circle class="c" cx="128" cy="863" r="13"/><text class="cn" x="128" y="867">5</text>
+  <circle class="c" cx="128" cy="655" r="13"/><text class="cn" x="128" y="659">6</text>
+  <circle class="c" cx="56" cy="730" r="13"/><text class="cn" x="56" y="734">7</text>
+  <circle class="c" cx="962" cy="640" r="13"/><text class="cn" x="962" y="644">8</text>
+  <circle class="c" cx="598" cy="628" r="13"/><text class="cn" x="598" y="632">9</text>
+  <circle class="c" cx="582" cy="236" r="13"/><text class="cn" x="582" y="240">10</text>
+</svg>

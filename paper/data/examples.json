@@ -1,0 +1,232 @@
+{
+ "signatures": {
+  "chrF++": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+  "BLEU": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+  "sacrebleu": "2.6.0"
+ },
+ "counts": {
+  "copied_source": 0,
+  "repetition": 0,
+  "number_mismatch": 30,
+  "good_to_english": 18,
+  "weak_to_english": 200
+ },
+ "counts_by_dir": {
+  "copied_source": {},
+  "repetition": {},
+  "number_mismatch": {
+   "en->ny": 10,
+   "en->tum": 8,
+   "ny->en": 8,
+   "tum->en": 4
+  },
+  "good_to_english": {
+   "ny->en": 16,
+   "tum->en": 2
+  },
+  "weak_to_english": {
+   "tum->en": 174,
+   "ny->en": 26
+  }
+ },
+ "copied_source": [],
+ "repetition": [],
+ "number_mismatch": [
+  {
+   "direction": "tum->en",
+   "src": "Kunozga mpweya munthowa yakusazga vinthu kweniso mpweya wakuthuta kwambula kuthukizga chomene.",
+   "ref": "Fig. 12. Synthesis gas manufacturing process by gasification.",
+   "hyp": "Difficulting the air along the way, as well as the air that blows without being severely damaged.",
+   "nllb": "Air conditioning is the process of mixing and heating the air without causing excessive pollution.",
+   "s_chrf": 13.3
+  },
+  {
+   "direction": "tum->en",
+   "src": "Mtundu wachiwili wa suga wachuluka chomene mu vyaka ivi, ungawa unenesko kung'anamula kuti ni mulili.",
+   "ref": "Type 2 diabetes has become so common in recent decades that it’s not an exaggeration to refer to it as an epidemic.",
+   "hyp": "The second type of music is very abundant in these years, it can mean it is true.",
+   "nllb": "The second kind of sugar has grown in popularity in recent years, and it can mean the truth.",
+   "s_chrf": 13.6
+  },
+  {
+   "direction": "en->tum",
+   "src": "Only eleven members of the block club’s hundred twenty-members showed up to participate in the discussion.",
+   "ref": "Pa ŵanthu 120, mamembala 11 pera a block club ndiwo ŵakiza ku ungano uwu kutolapo mbali mukudumbiskana.",
+   "hyp": "Ŵabali ŵankhondi na yumoza pera awo ŵakaŵa mu gulu la ŵanthu ŵakukwana makumi ghaŵiri pera ndiwo ŵakalongora kuti ŵaŵepo pa nkhani iyi.",
+   "nllb": "Ŵabali 11 pera ŵa gulu la ŵanthu 100 na 20 ndiwo ŵakiza kuzakapharazga.",
+   "s_chrf": 23.8
+  },
+  {
+   "direction": "tum->en",
+   "src": "Para msungwana waŵa na vilimika 30 sono ndipo kuti wajumpha vilimika vyake 15 vyakuti wababe mwana.",
+   "ref": "At thirty years of age a girl is actually currently 15 years past her child-bearing prime.",
+   "hyp": "When a girl is 30 years old and has spent 15 years old to have a child.",
+   "nllb": "If a girl is now in her 30's and has passed the age of 15 to have a child.",
+   "s_chrf": 28.4
+  },
+  {
+   "direction": "en->tum",
+   "src": "At thirty years of age a girl is actually currently 15 years past her child-bearing prime.",
+   "ref": "Para msungwana waŵa na vilimika 30 sono ndipo kuti wajumpha vilimika vyake 15 vyakuti wababe mwana.",
+   "hyp": "Pa vilimika makumi ghatatu kufuma apo mwanakazi wali na vyaka makumi ghatatu, sono wali na vyaka 15 ivyo wali na mwana wake.",
+   "nllb": "Mwanakazi uyo wali na vilimika 30, wali na vyaka 15 ivyo vyajumpha apo wakubaba.",
+   "s_chrf": 28.8
+  },
+  {
+   "direction": "ny->en",
+   "src": "Mtsogoleri wa dzikolo Gjorge Ivanov wanena kuti savota pazisankhozo ndipo kusavota kwa anthu ambiri kwadzetsa chiopsezo choti anthu ovota akhoza osafika mlingo wa theka la anthu a m’dzikolo kuti votiyo ikhale yovomerezeka.",
+   "ref": "President Gjorge Ivanov has said he will not be voting in the referendum and a boycott campaign has cast doubts on whether turnout will meet the minimum 50 percent required for the referendum to be valid.",
+   "hyp": "The leader of the country, Gjorge Ivanov, has said that he will not vote in the elections, and the lack of voting for many people has caused the risk that voters could not reach half of the country's population so that the vote becomes acceptable.",
+   "nllb": "The country's leader, Gjorge Ivanov, has said that they did not vote in the elections and that mass voter turnout has created a risk that voters may not reach half of the country's population for the vote to be valid.",
+   "s_chrf": 29.8
+  },
+  {
+   "direction": "en->tum",
+   "src": "The first lion killed measured nine feet, eight inches (3 meters) from nose to tip of tail.",
+   "ref": "Nkhalamu yakwamba iyo yikakomeka yikaŵa na msinkhu wa mayadi 9, 8 inches (mamita ghatatu) kufuma ku mphuno mpaka ku umaliro wa mchira.",
+   "hyp": "Ntcheŵe yakwamba yikakoma mamita ghankhondi na ghatatu, kufuma pa mamita ghankhondi na ghatatu (3 m'paka pa msana.",
+   "nllb": "Nkhalamu yakwamba iyo yikakomeka yikaŵa mamita ghatatu kufuma ku mphuno m'paka ku mchira.",
+   "s_chrf": 30.0
+  },
+  {
+   "direction": "en->tum",
+   "src": "Below, we list five useful styling tips that will make wide-leg pants spice up your winter wardrobe.",
+   "ref": "Pansi ghapa, tikundandalika fundo 5 zakovwira pa nkhani ya kujitozga izo zipangenge ma tharawuza gha malundi ghakulu kubebesa vyakuvwara vya nyengo ya chiwuvi.",
+   "hyp": "Pakati pajumpha nyengo, tikalembapo vigaŵa vinkhondi vyakovwira ivyo vizamupangiska kuti viŵe na vyakununkhira vinandi mu chigaŵa cha nyengo ya chiwuvi.",
+   "nllb": "Pansipa pali masachizgo ghankhondi agho ghangamovwirani kuti muŵe ŵakutowa pa nyengo ya chiwuvi.",
+   "s_chrf": 30.1
+  }
+ ],
+ "good_to_english": [
+  {
+   "direction": "tum->en",
+   "src": "Dr. Carter wakutemwa kuseŵera basketball, street hockey, flag football, golf na kuchimbira.",
+   "ref": "Dr. Carter enjoys playing basketball, street hockey, flag football, golf and running.",
+   "hyp": "Dr. Carter enjoys playing basketball, street hockey, flag football, golf, and running.",
+   "nllb": "Dr. Carter enjoys playing basketball, street hockey, flag football, golf, and running.",
+   "s_chrf": 96.1
+  },
+  {
+   "direction": "ny->en",
+   "src": "Madzulo ano abwenzi omwe amakhulupirira kuti akudziwa mayiyo afika pamalowa kuti afunse mafunso okhudza komwe apezeka m'mawa uno.",
+   "ref": "This afternoon friends who believe they know the woman have arrived at the scene to ask questions about where she was found this morning.",
+   "hyp": "Nowadays, friends who believe they know the woman have arrived at the scene to ask questions about where she was found this morning.",
+   "nllb": "This evening, friends who thought they knew the woman came to the scene to ask questions about where they had been this morning.",
+   "s_chrf": 90.0
+  },
+  {
+   "direction": "ny->en",
+   "src": "Amuna atatu, azaka za 33, 34 ndi 39, amangidwa galimoto itagundidwa mobwerezabwereza m'nyumba ina ku Londonderry.",
+   "ref": "Three men, aged 33, 34 and 39, have been arrested after a car was repeatedly rammed into a house in Londonderry.",
+   "hyp": "Three men, aged 33, 34, and 39, have been arrested after a car was repeatedly attacked in a house in Londonderry.",
+   "nllb": "Three men, aged 33, 34 and 39, were arrested after a car repeatedly hit a house in Londonderry.",
+   "s_chrf": 85.6
+  },
+  {
+   "direction": "ny->en",
+   "src": "A Merriweather ati St. Martin's siinalowe m'malo mwawo.",
+   "ref": "Mr. Merriweather said that St. Martin's did not replace him.",
+   "hyp": "Merriweather said St. Martin's did not replace him.",
+   "nllb": "Merriweather says that St. Martin's did not replace them.",
+   "s_chrf": 80.9
+  },
+  {
+   "direction": "ny->en",
+   "src": "Rosa idzabweretsa mvula yokwana mainchesi 10 m'malo ena a Mexico Lolemba.",
+   "ref": "Rosa will bring up to 10 inches of rain in parts of Mexico on Monday.",
+   "hyp": "Rosa will bring up to 10 millimeters of rain in some parts of Mexico on Monday.",
+   "nllb": "Rosa is expected to bring about 10 inches of rain to parts of Mexico on Monday.",
+   "s_chrf": 80.4
+  },
+  {
+   "direction": "ny->en",
+   "src": "Masewerawa asanachitike, Rangers idzasewera ndi Rapid Vienna mu Europa League Lachinayi.",
+   "ref": "Before then, Rangers host Rapid Vienna in the Europa League on Thursday.",
+   "hyp": "Before the match, Rangers will play against Rapid Vienna in the Europa League on Thursday.",
+   "nllb": "Prior to the match, Rangers will play Rapid Vienna in the Europa League on Thursday.",
+   "s_chrf": 80.4
+  },
+  {
+   "direction": "ny->en",
+   "src": "Polengeza kusinthako pa Twitter Loweruka, adalemba kuti: \"Omwe amadziwika kuti Kanye West.\"",
+   "ref": "Announcing the change on Twitter on Saturday, he wrote: \"The being formally known as Kanye West.\"",
+   "hyp": "In announcing the change on Twitter on Saturday, he wrote: \"Those known as Kanye West.\"",
+   "nllb": "Announcing the change on Twitter on Saturday, he wrote: \"Known as Kanye West\".",
+   "s_chrf": 79.8
+  },
+  {
+   "direction": "ny->en",
+   "src": "Kampaniyo inali kuwerengera avareji ya owonera pa CBS, ABC, NBC, CNN, Fox News Channel ndi MSNBC.",
+   "ref": "The company was counting average viewership on CBS, ABC, NBC, CNN, Fox News Channel and MSNBC.",
+   "hyp": "The company was counting a viewer at CBS, ABC, NBC, CNN, Fox News Channel, and MSNBC.",
+   "nllb": "The company was counting the average viewership on CBS, ABC, NBC, CNN, Fox News Channel and MSNBC.",
+   "s_chrf": 78.4
+  }
+ ],
+ "weak_to_english": [
+  {
+   "direction": "tum->en",
+   "src": "Kasi milimo ya kampani yikamanyikwa makora?",
+   "ref": "Were the organizational roles and responsibilities clearly identified?",
+   "hyp": "Is the company's work well known?",
+   "nllb": "Were the activities of the company well-known?",
+   "s_chrf": 8.6
+  },
+  {
+   "direction": "tum->en",
+   "src": "Nangauli somba yikuru yikamumira iyo wakayowoyapo yayi maghanoghano ghake.",
+   "ref": "Even having a whale swallow him failed to grant any perspective.",
+   "hyp": "Although the large fish was raised, he did not state his ideas.",
+   "nllb": "Even though the large fish swallowed him up, he did not express his thoughts.",
+   "s_chrf": 10.8
+  },
+  {
+   "direction": "tum->en",
+   "src": "Vingakolaso ntchito nge matikiti yakudindika pa mapepala ya matiketi yambula kudinda.",
+   "ref": "They are fully transferable, just like physical tickets printed on ticket stock.",
+   "hyp": "It can also be used as a circle on non-commercial skirts.",
+   "nllb": "They can also serve as printed tickets on unprinted tickets.",
+   "s_chrf": 11.0
+  },
+  {
+   "direction": "tum->en",
+   "src": "Kuyezga vyakuchita vya ma gene yanandi chomene mnthupi ndiko kukalongola umo wana awo wali na suzgo la nkhalo wakusinthila.",
+   "ref": "Gene expression profiling revealed a pronounced pro-inflammatory phenotype.",
+   "hyp": "The testing of many things in the body is to show how children with disabilities change.",
+   "nllb": "Experimentation on the effects of a large number of genes in the body has been instrumental in shaping the behavior of children with behavioral disorders.",
+   "s_chrf": 11.6
+  },
+  {
+   "direction": "tum->en",
+   "src": "Longorani kuti muli na ndalama zakukwana zakugwiriskira ntchito paulendo.",
+   "ref": "Demonstrate possession of sufficient financial resources to cover travel expenses.",
+   "hyp": "Make sure you have enough money to use on a trip.",
+   "nllb": "Show that you have enough money to spend on the trip.",
+   "s_chrf": 11.7
+  },
+  {
+   "direction": "tum->en",
+   "src": "Para ŵanthu ŵaheni ŵakweruzgika vikufumba nkhani yikuru ya nkhalo.",
+   "ref": "Bringing war criminals to justice asks fundamental moral questions.",
+   "hyp": "When bad people are tried, they ask about the main issue of witchcraft.",
+   "nllb": "When wicked people are judged, there is a serious moral issue.",
+   "s_chrf": 11.8
+  },
+  {
+   "direction": "tum->en",
+   "src": "Mayowoyero aya yanganibika mu masuzgo yakulu.",
+   "ref": "This statement will almost certainly get me into a great deal of hot water.",
+   "hyp": "These words can be seen in great problems.",
+   "nllb": "These words can put me in deep trouble.",
+   "s_chrf": 11.8
+  },
+  {
+   "direction": "tum->en",
+   "src": "Vinthu ivi vikuwoneka makora chifukwa cha umo vili kupangikira.",
+   "ref": "Accessories lend visual appeal through pattern and texture.",
+   "hyp": "These things are clearly visible because of the way they are made.",
+   "nllb": "These things are clearly seen by the way they are made.",
+   "s_chrf": 12.5
+  }
+ ]
+}
